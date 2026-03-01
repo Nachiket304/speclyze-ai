@@ -89,6 +89,7 @@ INPUT VALIDATION:
 FALLBACK JSON FORMAT (for invalid inputs):
 {
   "project_name": "⚠️ Error: Invalid Input",
+  "error_type": "invalid_requirement",
   "generated_test_cases": [
     {
       "tc_no": "TC-ERR",
@@ -105,21 +106,20 @@ FALLBACK JSON FORMAT (for invalid inputs):
       ]
     }
   ]
-},
-  "error_type": "invalid_requirement"
 }
 
 VALID INPUT FORMAT (for proper requirements):
 {
-  "test_cases": [
+  "project_name": "Name of the feature being tested",
+  "generated_test_cases": [
     {
-      "tc_no": 1,
+      "tc_no": "TC-001",
       "test_summary": "Descriptive summary",
       "test_description": "Detailed description",
       "precondition": "State before test",
       "steps": [
         {
-          "step": 1,
+          "step_number": 1,
           "action": "What to do",
           "test_data": "Input data",
           "expected_result": "Expected outcome"
