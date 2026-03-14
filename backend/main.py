@@ -33,13 +33,16 @@ def verify_api_key(api_key: str = Security(api_key_header)):
 
 # 3. Initialize App & Clients
 ai_client = Anthropic(api_key=ANTHROPIC_API_KEY)
-app = FastAPI(title="TestGenius AI Backend")
+app = FastAPI(
+    title="Speclyze API",
+    description="AI-Powered Specification Analysis & Test Generation"
+)
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",            # Your local frontend
-        "https://testgenius-ai.vercel.app", # Your future Vercel frontend
+        "https://speclyze.vercel.app/", # Your future Vercel frontend
         "*"                                 # Temporary wildcard so Render testing doesn't fail
     ],
     allow_credentials=True,
@@ -57,7 +60,7 @@ async def global_exception_handler(request, exc):
     )
 
 # 4. Initialize Local Database
-DB_FILE = "testgenius_memory.db"
+DB_FILE = "speclyze_memory.db"
 
 def init_db():
     conn = sqlite3.connect(DB_FILE)
