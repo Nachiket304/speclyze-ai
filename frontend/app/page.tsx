@@ -143,7 +143,7 @@ export default function Home() {
         <div className="text-center pt-12">
           <h1 className="text-5xl font-extrabold mb-4 tracking-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
-              TestGenius AI
+              Speclyze
             </span>
             <span className="ml-2 inline-block drop-shadow-sm">🧠</span>
           </h1>
@@ -322,9 +322,9 @@ export default function Home() {
 
       {/* ✨ ENTERPRISE SAAS FOOTER ✨ */}
       <footer className="mt-20 pb-8 border-t border-slate-200/60 pt-8 text-center w-full">
-        <p className="text-sm font-extrabold text-slate-400 uppercase tracking-widest mb-2">TestGenius AI</p>
+        <p className="text-sm font-extrabold text-slate-400 uppercase tracking-widest mb-2">Speclyze</p>
         <p className="text-xs text-slate-500 font-medium tracking-wide">
-          © 2026 TestGenius AI. All rights reserved. <br/> 
+          © 2026 Speclyze. All rights reserved. <br/> 
           <span className="inline-block mt-1 opacity-75">Built for modern software engineering teams.</span>
         </p>
       </footer>

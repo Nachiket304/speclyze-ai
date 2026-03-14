@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TestGenius AI",
-  description: "Next-Generation Enterprise QA Copilot built for SDETs.",
+  title: "Speclyze | AI-Powered QA Copilot",
+  description: "Analyze specifications and generate enterprise-grade test cases instantly.",
 };
 
 export default function RootLayout({
