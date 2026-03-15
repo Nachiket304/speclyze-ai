@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import toast from 'react-hot-toast';
+import { SpeclyzeLogoFull } from '@/components/Logo';
 
 export default function Home() {
   const [requirement, setRequirement] = useState("");
@@ -139,14 +140,15 @@ export default function Home() {
     <main className="min-h-screen p-8 bg-[#FAFAFA] text-slate-900 font-sans selection:bg-indigo-100 flex flex-col justify-between">
       <div className="max-w-[90rem] mx-auto space-y-10 w-full">
         
-        {/* Modern Header */}
-        <div className="text-center pt-12">
-          <h1 className="text-5xl font-extrabold mb-4 tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
-              Speclyze
-            </span>
-            <span className="ml-2 inline-block drop-shadow-sm">🧠</span>
-          </h1>
+        {/* Modern Header with Speclyze Logo */}
+        <div className="text-center pt-12 flex flex-col items-center">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            
+            {/* Calling our new clean Logo Component! */}
+            <SpeclyzeLogoFull width={200} height={67} className="drop-shadow-xl transform hover:scale-105 transition-transform" />
+
+          </div>
+          
           <p className="text-[17px] text-slate-500 font-medium tracking-wide">
             Next-Generation Enterprise QA Copilot
           </p>
